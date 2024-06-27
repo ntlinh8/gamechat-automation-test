@@ -1,0 +1,64 @@
+{"Account_Chrome_DEV":{
+                        "ID": "",
+                        "Name": "",
+                        "Email": "",
+                        "Password": "",
+                        "cf_clearance": "",
+                        "at": "",
+                        "at_value": ""
+                      },
+  "Account_ChromeHospital_DEV":{
+                        "ID": "",
+                        "Name": "",
+                        "Email": "",
+                        "Password": "",
+                        "cf_clearance": "",
+                        "at": "",
+                        "at_value": ""
+                      },
+  "Account_ChromeTravel_DEV":{
+                        "ID": "",
+                        "Name": "",
+                        "Email": "",
+                        "Password": "",
+                        "cf_clearance": "",
+                        "at": "",
+                        "at_value": ""
+                      },
+  "Account_Firefox_DEV":{
+                        "ID": "",
+                        "Name": "",
+                        "Email": "",
+                        "Password": "",
+                        "cf_clearance": "",
+                        "at": "",
+                        "at_value": ""
+                        },
+  "Account_FirefoxStaff_DEV":{
+                        "ID": "",
+                        "Name": "",
+                        "Email": "",
+                        "Password": "",
+                        "cf_clearance": "",
+                        "at": "",
+                        "at_value": ""
+                        },
+  "Account_FirefoxNewPlayer_DEV":{
+                        "ID": "",
+                        "Name": "",
+                        "Email": "",
+                        "Password": "",
+                        "cf_clearance": "",
+                        "at": "",
+                        "at_value": ""
+                        },
+  "Account_FirefoxTravel_DEV":{
+                        "ID": "",
+                        "Name": "",
+                        "Email": "",
+                        "Password": "",
+                        "cf_clearance": "",
+                        "at": "",
+                        "at_value": ""
+                        }
+}

@@ -1,0 +1,24 @@
+userName: ddx_nh2iU6
+accessKey: L3KPW4PLrkAyt2NddLrQ
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+  - os: OS X
+    osVersion: Sonoma
+    browserName: Chrome
+    browserVersion: latest
+  - deviceName: Samsung Galaxy S23 Ultra
+    osVersion: 13.0
+    browserName: chrome
+    deviceOrientation: portrait
+browserstackLocal: true
+parallelsPerPlatform: 1
+buildName: Jenny Test Torn Website
+buildIdentifier: ${DATE_TIME}
+projectName: Jenny Test Torn Website
+debug: false
+networkLogs: false
+consoleLogs: info
+framework: robot
