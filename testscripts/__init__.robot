@@ -1,29 +1,35 @@
 *** Settings ***
-Resource    ../common/settings.robot
-# Suite Setup    Setup Before All Suites
+Resource    ..//common//settings.robot
+Suite Setup    Setup Before All Suites
+
+*** Variables ***
+${isSetupTravel}     ${False}
 
 *** Keywords ***
 Setup Before All Suites
     Log To Console    Setup Before All Suites
     Load Data From Json
-    Setup Travelling Accounts
+    Run Keyword If    "${isSetupTravel}"=="True"
+    ...    Setup Travelling Accounts
     
 Load Data From Json
     Log To Console    Load Data From Json
-    ${json_file_path}    Set Variable    common/${env}_${pc}.json
+    ${json_file_path}    Set Variable    common/${pc}.json
     ${json_content}      Get File           ${json_file_path}
-    #Chrome
-    &{Account_Chrome}               Evaluate    json.loads('''${json_content}''')['Account_Chrome_${env}']    json
-    &{Account_ChromeHospital}       Evaluate    json.loads('''${json_content}''')['Account_ChromeHospital_${env}']    json
-    &{Account_ChromeTravel}         Evaluate    json.loads('''${json_content}''')['Account_ChromeTravel_${env}']    json
+    &{Account_Chrome}                    Evaluate    json.loads('''${json_content}''')['Account_Chrome']    json
+    &{Account_Chrome_Backup}             Evaluate    json.loads('''${json_content}''')['Account_Chrome_Backup']    json
+    &{Account_ChromeHospital}            Evaluate    json.loads('''${json_content}''')['Account_ChromeHospital']    json
+    &{Account_ChromeTravel}              Evaluate    json.loads('''${json_content}''')['Account_ChromeTravel']    json
+    &{Account_Firefox}                   Evaluate    json.loads('''${json_content}''')['Account_Firefox']    json
+    &{Account_FirefoxNewPlayer}          Evaluate    json.loads('''${json_content}''')['Account_FirefoxNewPlayer']    json
+    &{Account_FirefoxStaff}              Evaluate    json.loads('''${json_content}''')['Account_FirefoxStaff']    json
+    &{Account_FirefoxTravel}             Evaluate    json.loads('''${json_content}''')['Account_FirefoxTravel']    json
+    &{Account_FirefoxBackup}             Evaluate    json.loads('''${json_content}''')['Account_FirefoxBackup']    json
+    &{Account_FirefoxSynchronize}             Evaluate    json.loads('''${json_content}''')['Account_Firefox_Synchronize']    json
 
-    #Firefox
-    &{Account_Firefox}                Evaluate    json.loads('''${json_content}''')['Account_Firefox_${env}']    json
-    &{Account_FirefoxNewPlayer}       Evaluate    json.loads('''${json_content}''')['Account_FirefoxNewPlayer_${env}']    json
-    &{Account_FirefoxStaff}       Evaluate    json.loads('''${json_content}''')['Account_FirefoxStaff_${env}']    json
-    &{Account_FirefoxTravel}       Evaluate    json.loads('''${json_content}''')['Account_FirefoxTravel_${env}']    json
 
     Set Global Variable    &{Account_Chrome}
+    Set Global Variable    &{Account_Chrome_Backup}
     Set Global Variable    &{Account_ChromeHospital}
     Set Global Variable    &{Account_ChromeTravel}
 
@@ -31,6 +37,8 @@ Load Data From Json
     Set Global Variable    &{Account_FirefoxNewPlayer}
     Set Global Variable    &{Account_FirefoxStaff}
     Set Global Variable    &{Account_FirefoxTravel}
+    Set Global Variable    &{Account_FirefoxBackup}
+    Set Global Variable    &{Account_FirefoxSynchronize}
 
 Setup Travelling Accounts
     Log To Console    Setup Travelling Accounts
