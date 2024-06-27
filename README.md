@@ -8,9 +8,9 @@ If you are worried about the authenticity of this project, you can ask me any qu
 (Actually, after getting permission for private use, I just posted it recently)
 
 ## Repository Structure
-- **common/**: Contains common libraries and resources used across multiple test scripts.
-- **resources/**: Holds resource files like variables, keywords, and other reusable components.
-- **testscripts/**: Includes the actual test scripts written in Robot Framework.
+- **common**: Contains common libraries and resources used across multiple test scripts.
+- **resources**: Holds resource files like variables, keywords, and other reusable components.
+- **testscripts**: Includes the actual test scripts written in Robot Framework.
 - **red.xml**: Configuration for RED - Robot Editor.
 - **requirements.txt**: Lists the dependencies required to run the automation tests.
 
