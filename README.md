@@ -2,7 +2,7 @@
 
 ## Project Description (must read)
 
-This archive is one of my freelance projects and it was approved for public posting (no sensitive data) as a testament to my efforts. It is built using Robot Framework and Selenium for the [**Torn City**](https://www.torn.com/) game. 
+This project is one of my freelance projects and it was approved for public posting (no sensitive data) as a testament to my efforts. It is built using Robot Framework and Selenium for the [**Torn City**](https://www.torn.com/) game. 
 
 If you are worried about the authenticity of this project, you can ask me any question about any line of code during an interview. I developed it from scratch, so I can explain everything to you.
 (Actually, after getting permission for private use, I just posted it recently)
