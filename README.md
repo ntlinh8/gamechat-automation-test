@@ -1,6 +1,6 @@
 # GameChat Automation Test
 
-## Project Description
+## Project Description (must read)
 
 This archive is one of my freelance projects and it was approved for public posting (no sensitive data) as a testament to my efforts. It is built using Robot Framework and Selenium for the [**Torn City**](https://www.torn.com/) game. 
 
