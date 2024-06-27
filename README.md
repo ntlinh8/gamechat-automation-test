@@ -14,6 +14,12 @@ If you are worried about the authenticity of this project, you can ask me any qu
 - **red.xml**: Configuration for RED - Robot Editor.
 - **requirements.txt**: Lists the dependencies required to run the automation tests.
 
+## Techstacks
+- Python, Robot Framework, Selenium, Javascript
+- Page Object Model
+- Dynamic locator
+- Handle multiple accounts and switch 2 windows
+
 ## Getting Started
 
 ### Prerequisites
